@@ -1,0 +1,338 @@
+@font-face 
+{   font-family: 'MankSans';
+    src: url('../fonts/MankSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{   font-family: 'mark-my-words';
+    src: url('../fonts/mark_my_words.eot');
+    src: url('../fonts/mark_my_words.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mark_my_words.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{   font-family: 'Lane-Narrow';
+    src: url('../fonts/Lane-Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Bebas'; 
+    src: url('../fonts/Bebas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'MankSans'; Helvetica; Arial;
+	font-size: 0.9em;
+}
+
+h1
+{
+	font-family: 'mark-my-words';
+	font-size: 80px;
+	color: orange;
+	margin-bottom: -10px;
+}
+
+h2
+{
+	font-family: 'Bebas';
+	text-align: center;
+	
+}
+
+h3, h4 
+{
+	font-family: 'Lane-Narrow';
+	color: orange;
+	text-align: center;
+}
+
+h5
+{
+	font-family: 'Lane-Narrow';
+	Line-Height: 4;
+}
+
+nav
+{
+    position: fixed;
+    left: 50px;
+   	top: 170px;
+    width: 150px;
+	margin: 120px, 0px, 0px, 0px;
+	text-align: center;
+}
+
+a
+{ 
+	font-family: "Lane-Narrow";
+	text-decoration:none; 
+	color:#333; 
+} 
+
+a:hover
+{ 
+	color: orange; 
+}
+
+header
+{
+	padding-top: 150px;
+	padding-bottom : 150px;
+	margin-left: 250px;
+	text-align: center;
+	background-image: url("../Images/photoaccueil.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 250px, 0px, 0px, 0px;
+}
+
+
+.intitulé
+{
+	font-family: 'MankSans';
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	margin-bottom: -20px;
+	
+}
+
+.bouton
+{
+	background-color: white;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@-o-keyframes typing { from { width: 0; } }
+@-o-keyframes blink-caret { 50% { border-color: transparent; } }
+@-k-keyframes typing { from { width: 0; } }
+@-k-keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+/* The typing effect */
+
+
+.typewriter 
+{ 
+	font-family: 'Bebas';
+	font-size: 2em;
+	color: #fff;
+	border-right: .15em solid orange; /* The typwriter cursor */
+	width: 17.5em; 
+	margin: 0 auto;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 3.5s steps(30, end),
+	           blink-caret .5s step-end infinite;
+	-o-animation: typing 3.5s steps(30, end),
+	           blink-caret .5s step-end infinite;
+	-k-animation: typing 3.5s steps(30, end),
+	           blink-caret .5s step-end infinite;
+	animation: typing 3.5s steps(30, end),
+	           blink-caret .5s step-end infinite;
+}
+
+
+section
+{
+    margin-left: 250px;
+	background-color: #F1E9E3;
+}
+
+#about
+{
+	font-family: 'MankSans';
+	text-align: center;
+	width: 700px;
+    margin: auto; 
+ 	padding: 70px;
+}
+
+
+.compétences
+{
+	background-color: #E7DCD4;
+	width: 100%;
+ 	text-align: center;
+    padding: 50px;
+	font-family: "MankSans";
+}
+
+table
+{
+	width: 80%;
+	margin: auto;
+}
+
+td
+{
+	padding: 20px;
+}
+
+
+#expérience
+{
+ 	text-align: center;
+	width: 700px;
+    margin: auto; 
+ 	margin-top: 100px;
+   	margin-bottom: 70px;
+}
+
+* 
+{
+	box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	max-width: 1200px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.exp 
+{
+	padding: 10px 40px;
+	position: relative;
+	background-color: none;
+	width: 50%;
+}
+
+/* The circles on the timeline */
+.exp::after 
+{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: orange;
+	border: 4px solid orange;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the exp to the left */
+.left 
+{
+	left: 0;
+}
+
+/* Place the exp to the right */
+.right 
+{
+	left: 50%;
+}
+
+/* Fix the circle for exps on the right side */
+.right::after 
+{
+	left: -16px;
+}
+
+/* The actual content */
+.content 
+{
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.formation
+{
+ 	background-color: #E7DCD4;
+	text-align: center;
+    margin: auto; 
+ 	padding: 70px;
+}
+
+
+.autoportrait
+{
+	font-family: 'MankSans';
+	text-align: justify;
+	width: 80%
+    margin: auto; 
+ 	padding: 90px;
+	
+	
+	width: 100%;
+ 	text-align: center;
+    padding: 50px;
+	font-family: "MankSans";
+}	
+
+.contact
+{
+	background-color: #E7DCD4;
+ 	padding: 50px 340px;
+	text-align: center;
+}
+
+	
+footer
+{
+	text-align: center;
+}
+
